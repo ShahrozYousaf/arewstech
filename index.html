@@ -79,6 +79,7 @@
     html {
       scroll-behavior: smooth;
       scroll-padding-top: 96px;
+      overflow-x: hidden;
     }
 
     body {
@@ -137,6 +138,7 @@
     img,
     svg {
       display: block;
+      
     }
 
     :focus-visible {
@@ -2068,8 +2070,10 @@
       }
 
       .hero-badge {
-        align-items: flex-start;
+        /* align-items: flex-start; */
         border-radius: var(--radius);
+        font-size: 12px;
+        padding: 10px 10px;
       }
 
       .project-visual {
@@ -2143,7 +2147,7 @@
         <a href="#contact">Contact</a>
       </nav>
       <div class="nav-actions">
-        <a class="button primary" href="#contact">Start a Project <svg class="icon"><use href="#icon-arrow-right"></use></svg></a>
+        <a class="button primary" href="https://forms.gle/9z7nYHZx6K3M6rPx6" target="_blank" rel="noopener noreferrer">Start Your Project <svg class="icon"><use href="#icon-arrow-right"></use></svg></a>
         <!-- <button class="theme-dot" id="themeToggle" type="button" aria-label="Toggle accent theme" aria-pressed="false">
           <svg class="icon"><use href="#icon-sun"></use></svg>
         </button> -->
@@ -2162,7 +2166,7 @@
           <h1>Your Vision.<br><span class="gradient-text">Our Technology.</span><br>Limitless Possibilities.</h1>
           <p class="lead">AREWSTECH transforms ideas into powerful digital products. From modern websites and web applications to custom software solutions, we combine creative design with reliable technology to help businesses grow.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#contact">Start Your Project <svg class="icon"><use href="#icon-arrow-right"></use></svg></a>
+            <a class="button primary" href="https://forms.gle/9z7nYHZx6K3M6rPx6" target="_blank" rel="noopener noreferrer">Start Your Project <svg class="icon"><use href="#icon-arrow-right"></use></svg></a>
             <!-- <a class="button ghost" href="#projects">Explore Our Work <svg class="icon"><use href="#icon-arrow-right"></use></svg></a> -->
           </div>
           <!-- <div class="hero-contact" aria-label="AREWSTECH social links">
@@ -2275,9 +2279,10 @@
               </ul>
             </div>
             <div class="device-stack" role="img" aria-label="Website interface across laptop, tablet, and smartphone">
-              <div class="screen desktop"><div class="screen-bars"><span></span><span></span><span></span><span></span></div></div>
+              <!-- <div class="screen desktop"><div class="screen-bars"><span></span><span></span><span></span><span></span></div></div>
               <div class="screen tablet"><div class="screen-bars"><span></span><span></span><span></span><span></span></div></div>
-              <div class="screen phone"><div class="screen-bars"><span></span><span></span><span></span></div></div>
+              <div class="screen phone"><div class="screen-bars"><span></span><span></span><span></span></div></div> -->
+              <img src="./pic/pic-1.png" alt="Website interface across laptop, tablet, and smartphone" style="max-width: 600px; width: 100%; height: auto; border-radius: var(--radius); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);">
             </div>
           </div>
         </div>
@@ -2370,7 +2375,7 @@
               <p class="lead">Have a project in mind? Whether you're starting something new, improving an existing product, or looking for a technology partner, we're ready to help.</p>
             </div>
             <div class="cta-actions">
-              <a class="button primary" href="#contact">Start Your Project <svg class="icon"><use href="#icon-arrow-right"></use></svg></a>
+              <a class="button primary" href="#contact">Contact Us<svg class="icon"><use href="#icon-arrow-right"></use></svg></a>
               <a class="button ghost" href="mailto:arewstech@gmail.com" data-email-link>Talk To Us <svg class="icon"><use href="#icon-mail"></use></svg></a>
             </div>
           </div>
@@ -2391,22 +2396,15 @@
             <p class="muted">Share what you want to build, improve, automate, or launch. The first step is a focused conversation around your goals.</p>
             <div class="contact-list" id="contactList"></div>
             <div class="hero-contact" aria-label="AREWSTECH contact social links">
-              <a class="social-link" href="#" data-social="linkedin" aria-label="LinkedIn profile"><svg class="icon" aria-hidden="true"><use href="#icon-linkedin"></use></svg></a>
-              <a class="social-link" href="#" data-social="github" aria-label="GitHub profile"><svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg></a>
-              <a class="social-link" href="#" data-social="facebook" aria-label="Facebook page"><svg class="icon" aria-hidden="true"><use href="#icon-facebook"></use></svg></a>
-              <a class="social-link" href="#" data-social="instagram" aria-label="Instagram profile"><svg class="icon" aria-hidden="true"><use href="#icon-instagram"></use></svg></a>
+              <!-- <a class="social-link" href="#" data-social="linkedin" aria-label="LinkedIn profile"><svg class="icon" aria-hidden="true"><use href="#icon-linkedin"></use></svg></a>
+              <a class="social-link" href="#" data-social="github" aria-label="GitHub profile"><svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg></a> -->
+              <a class="social-link" href="https://www.facebook.com/profile.php?id=100095072835382" data-social="facebook" aria-label="Facebook page"><svg class="icon" aria-hidden="true"><use href="https://www.facebook.com/profile.php?id=100095072835382"></use></svg></a>
+              <a class="social-link" href="#" data-social="instagram" aria-label="Instagram profile"><svg class="icon" aria-hidden="true"><use href="https://www.instagram.com/arewstech/"></use></svg></a>
             </div>
           </div>
 
           <div class="form-panel glass reveal">
-            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
-              <div class="honeypot" aria-hidden="true">
-                <label for="website">Website</label>
-                <input type="checkbox" id="website" name="botcheck" tabindex="-1" autocomplete="off">
-              </div>
-              <input type="hidden" name="access_key" value="2708d210-4a92-4057-9f8b-09955b449f81">
-              <input type="hidden" name="subject" value="New AREWSTECH Project Inquiry">
-              <input type="hidden" name="from_name" value="AREWSTECH">
+            <form id="contactForm" action="mailto:arewstech@gmail.com" method="post" enctype="text/plain" novalidate>
               <div class="form-grid">
                 <div class="field">
                   <label for="name">Your Name</label>
@@ -2443,14 +2441,9 @@
                   <textarea id="message" name="message" placeholder="Tell us about your project..." aria-describedby="messageError" required></textarea>
                   <span class="field-error" id="messageError"></span>
                 </div>
-                <!-- <div class="field full">
-                  <label for="captcha" id="captchaLabel">Spam protection</label>
-                  <input type="text" id="captcha" name="captcha" inputmode="numeric" placeholder="Enter the answer" aria-describedby="captchaError" required>
-                  <span class="field-error" id="captchaError"></span>
-                </div> -->
               </div>
               <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-              <button class="button primary" id="submitButton" type="submit">Send Project Inquiry <svg class="icon"><use href="#icon-send"></use></svg></button>
+              <button class="button primary" type="submit">Send Project Inquiry <svg class="icon"><use href="#icon-send"></use></svg></button>
             </form>
           </div>
         </div>
@@ -2464,7 +2457,7 @@
         <div class="footer-brand">
           <a class="brand" href="#home">
             <span class="brand-mark">
-              <img src="./pic/AT_logo.png" alt="">
+              <img src="./pic/AT_logo.png" alt="logo" height="30px" width="30px">
             </span>
             <span>AREWSTECH</span>
           </a>
@@ -2496,10 +2489,10 @@
         </div>
         <div class="footer-col">
           <h3>Connect</h3>
-          <a href="#" data-social="linkedin">LinkedIn</a>
-          <a href="#" data-social="github">GitHub</a>
-          <a href="#" data-social="facebook">Facebook</a>
-          <a href="#" data-social="instagram">Instagram</a>
+          <!-- <a href="#" data-social="linkedin">LinkedIn</a>
+          <a href="#" data-social="github">GitHub</a> -->
+          <a href="https://www.facebook.com/profile.php?id=100095072835382" data-social="facebook">Facebook</a>
+          <a href="https://www.instagram.com/arewstech/" data-social="instagram">Instagram</a>
         </div>
       </div>
       <div class="footer-bottom">
@@ -2522,22 +2515,17 @@
     const siteConfig = {
       brand: "AREWSTECH",
       tagline: "Your Vision. Our Technology.",
-      contactEndpoint: "https://api.web3forms.com/submit",
       contact: {
         email: "arewstech@gmail.com",
         phone: "+923448505176",
-        location: "Pakistan / Remote Worldwide",
+        location: "Remote Work",
         availability: "Available for new projects",
         social: {
           linkedin: "#",
           github: "#",
-          facebook: "#",
-          instagram: "#"
+          facebook: "https://www.facebook.com/profile.php?id=100095072835382",
+          instagram: "https://www.instagram.com/arewstech/"
         }
-      },
-      captcha: {
-        question: "What is 4 + 3?",
-        answer: "7"
       },
       statistics: [
         { value: "50+", target: 50, suffix: "+", label: "Projects Completed" },
@@ -2895,6 +2883,7 @@
 
     function renderStats() {
       const target = document.getElementById("statsGrid");
+      if (!target) return;
       target.innerHTML = siteConfig.statistics.map((stat) => `
         <article class="stat-card reveal">
           <span class="stat-value" data-target="${stat.target}" data-suffix="${stat.suffix}" data-final="${stat.value}">0</span>
@@ -2945,18 +2934,10 @@
           <div><strong>Phone</strong><span>${contact.phone}</span></div>
         </div>
         <div class="contact-item">
-          <span class="icon-wrap">${icon("location")}</span>
+          // <span class="icon-wrap">${icon("location")}</span>
           <div><strong>Location</strong><span>${contact.location}</span></div>
         </div>
-        <div class="contact-item">
-          <span class="icon-wrap">${icon("bolt")}</span>
-          <div><strong>Availability</strong><span class="status-line"><span class="pulse-dot"></span>${contact.availability}</span></div>
-        </div>
       `;
-      const captchaLabel = document.getElementById("captchaLabel");
-      if (captchaLabel) {
-        captchaLabel.textContent = `Spam protection: ${siteConfig.captcha.question}`;
-      }
       document.querySelectorAll("[data-email-link]").forEach((link) => {
         link.href = `mailto:${contact.email}`;
       });
@@ -2993,10 +2974,12 @@
         });
       });
 
-      themeToggle.addEventListener("click", () => {
-        const isAlt = document.body.classList.toggle("accent-alt");
-        themeToggle.setAttribute("aria-pressed", String(isAlt));
-      });
+      if (themeToggle) {
+        themeToggle.addEventListener("click", () => {
+          const isAlt = document.body.classList.toggle("accent-alt");
+          themeToggle.setAttribute("aria-pressed", String(isAlt));
+        });
+      }
 
       window.addEventListener("scroll", syncScrollState, { passive: true });
       syncScrollState();
@@ -3091,7 +3074,6 @@
       const email = form.elements.email;
       const service = form.elements.service;
       const message = form.elements.message;
-      const captcha = form.elements.captcha;
       const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
       const checks = [
@@ -3101,10 +3083,6 @@
         [message, message.value.trim().length >= 12, "Please add a little more detail about your project."]
       ];
 
-      if (captcha) {
-        checks.push([captcha, captcha.value.trim() === siteConfig.captcha.answer, "Please answer the spam protection question."]);
-      }
-
       checks.forEach(([field, passed, error]) => {
         setFieldError(field, passed ? "" : error);
         if (!passed) isValid = false;
@@ -3113,32 +3091,38 @@
       return isValid;
     }
 
+    function createInquiryMailto(form) {
+      const company = form.elements.company.value.trim() || "Not provided";
+      const body = [
+        `Name: ${form.elements.name.value.trim()}`,
+        `Email: ${form.elements.email.value.trim()}`,
+        `Company / Business: ${company}`,
+        `Service: ${form.elements.service.value.trim()}`,
+        "",
+        "Message:",
+        form.elements.message.value.trim()
+      ].join("\n");
+
+      return `mailto:${siteConfig.contact.email}?subject=${encodeURIComponent(`New ${siteConfig.brand} Project Inquiry`)}&body=${encodeURIComponent(body)}`;
+    }
+
     function initContactForm() {
       const form = document.getElementById("contactForm");
       const status = document.getElementById("formStatus");
-      const button = document.getElementById("submitButton");
-      const honeypot = document.getElementById("website");
-      let isSubmitting = false;
       let submittedOnce = false;
 
       form.addEventListener("input", (event) => {
         const field = event.target.closest("input, textarea, select");
-        if (field && field.id !== "website") setFieldError(field, "");
+        if (field) setFieldError(field, "");
         if (submittedOnce) submittedOnce = false;
       });
 
-      form.addEventListener("submit", async (event) => {
+      form.addEventListener("submit", (event) => {
         event.preventDefault();
-        if (isSubmitting || submittedOnce) return;
+        if (submittedOnce) return;
 
         status.className = "form-status";
         status.textContent = "";
-
-        if (honeypot.checked) {
-          status.className = "form-status error";
-          status.textContent = "Something went wrong. Please try again or contact us directly.";
-          return;
-        }
 
         if (!validateForm(form)) {
           status.className = "form-status error";
@@ -3146,45 +3130,10 @@
           return;
         }
 
-        isSubmitting = true;
-        button.disabled = true;
-        button.innerHTML = `Sending... ${icon("send")}`;
-        status.textContent = "Sending your project inquiry...";
-
-        try {
-          const formData = Object.fromEntries(new FormData(form).entries());
-          const response = await fetch(siteConfig.contactEndpoint, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              "Accept": "application/json"
-            },
-            body: JSON.stringify({
-              access_key: "2708d210-4a92-4057-9f8b-09955b449f81",
-              subject: "New AREWSTECH Project Inquiry",
-              from_name: siteConfig.brand,
-              botcheck: false,
-              ...formData
-            })
-          });
-          const result = await response.json();
-
-          if (!response.ok || !result.success) {
-            throw new Error(result.message || "Request failed");
-          }
-
-          submittedOnce = true;
-          form.reset();
-          status.className = "form-status success";
-          status.textContent = "Thank you! Your project inquiry has been received. We'll get back to you shortly.";
-        } catch (error) {
-          status.className = "form-status error";
-          status.textContent = "Something went wrong. Please try again or contact us directly.";
-        } finally {
-          isSubmitting = false;
-          button.disabled = false;
-          button.innerHTML = `Send Project Inquiry ${icon("send")}`;
-        }
+        submittedOnce = true;
+        window.location.href = createInquiryMailto(form);
+        status.className = "form-status success";
+        status.textContent = "Your email app should open with your project inquiry ready to send.";
       });
     }
 
